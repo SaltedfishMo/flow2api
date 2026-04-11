@@ -2,10 +2,7 @@ version: '3.8'
 
 services:
   flow2api-headed:
-    build:
-      context: .
-      dockerfile: Dockerfile.headed
-    image: flow2api:headed
+    image: ghcr.io/saltedfishmo/flow2api-headed:latest
     container_name: flow2api-headed
     ports:
       - "8000:8000"
